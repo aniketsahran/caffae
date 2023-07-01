@@ -125,6 +125,7 @@ textarea:focus, input:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .footer-social_section-header {
@@ -139,11 +140,17 @@ textarea:focus, input:focus {
     font-weight: 700;
     line-height: normal;
     flex: 1;
+    margin: 0 2%;
 }
 
 .footer-social_section-social_handles {
     display: flex;
     flex: 0.2;
+    margin: 0 2%;
+}
+
+.footer-social_section-social_handles-handle {
+    margin: 0 5%;
 }
 
 .footer-social_section-mail {
@@ -157,6 +164,8 @@ textarea:focus, input:focus {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin: 0 2%;
+    text-align: left;
 }
 
 .footer-social_section-mail a {

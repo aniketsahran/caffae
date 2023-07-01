@@ -1,10 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 import './Footer.css';
 import image1 from '../../assets/mention.png';
 import image2 from '../../assets/linkedin.png';
 import image3 from '../../assets/instagram.png';
 
 const Footer = () => {
+  const [contactForm, setContactForm] = useState({
+    name: "",
+    email: "",
+    query: ""
+  });
+
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setContactForm({
+      ...contactForm,
+      [name]:value
+    });
+  }
+
+  const createEntry = async (e) => {
+    e.preventDefault();
+    const res = await axios.post('http://localhost:3000/contactCreate', contactForm);
+    setContactForm({
+      name: "",
+      email: "",
+      query: ""
+    });
+  }
+
   return (
     <div className="footer-container">
       <div className='footer-form_section'>
@@ -13,15 +38,13 @@ const Footer = () => {
         </div>
         <div className='footer-space'></div>
         <div className='footer-form'>
-          <form>
+          <form onSubmit={createEntry}>
             <p>Your Name</p>
-            <input type="text" class="footer-form-field"  placeholder="Your Name" />
+            <input name="name" value={contactForm.name} onChange={handleChange} type="text" class="footer-form-field"  placeholder="Your Name" />
             <p>Your E-Mail</p>
-            <input type="email" class="footer-form-field" placeholder="Ex. yourname@example.com" />
-            <p>Your Contact Number</p>
-            <input type="text" class="footer-form-field"  placeholder="Ex. 9876543210" />
+            <input name="email" value={contactForm.email} onChange={handleChange} type="email" class="footer-form-field" placeholder="Ex. yourname@example.com" />
             <p>Write the Problem you want to ask our guru</p>
-            <textarea type="text" class="footer-form-field textarea"  placeholder="Write your question." />
+            <textarea name="query" value={contactForm.query} onChange={handleChange} type="text" class="footer-form-field textarea"  placeholder="Write your question." />
             <button type="submit" class="footer-form-btn">Submit</button>
           </form>
         </div>
@@ -30,8 +53,8 @@ const Footer = () => {
       <div className='footer-social_section'>
         <div className='footer-social_section-header'>Follow Us!</div>
         <div className='footer-social_section-social_handles'>
-          <a><img src={image2} /></a>
-          <a><img src={image3} /></a>
+          <a href="https://www.linkedin.com/company/caffae/" className='footer-social_section-social_handles-handle'><img src={image2} /></a>
+          <a href="https://www.instagram.com/caffae.in/" className='footer-social_section-social_handles-handle'><img src={image3} /></a>
         </div>
         <div className='footer-social_section-mail'>
           <p><b>Contact Us</b><br />
