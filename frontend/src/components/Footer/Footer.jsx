@@ -22,7 +22,7 @@ const Footer = () => {
 
   const createEntry = async (e) => {
     e.preventDefault();
-    const res = await axios.post('http://localhost:3000/contactCreate', contactForm);
+    const res = await axios.post('http://localhost:3000/contact-create', contactForm);
     setContactForm({
       name: "",
       email: "",
@@ -40,12 +40,12 @@ const Footer = () => {
         <div className='footer-form'>
           <form onSubmit={createEntry}>
             <p>Your Name</p>
-            <input name="name" value={contactForm.name} onChange={handleChange} type="text" class="footer-form-field"  placeholder="Your Name" />
+            <input name="name" value={contactForm.name} onChange={handleChange} type="text" className="footer-form-field"  placeholder="Your Name" />
             <p>Your E-Mail</p>
-            <input name="email" value={contactForm.email} onChange={handleChange} type="email" class="footer-form-field" placeholder="Ex. yourname@example.com" />
+            <input name="email" value={contactForm.email} onChange={handleChange} type="email" className="footer-form-field" placeholder="Ex. yourname@example.com" />
             <p>Write the Problem you want to ask our guru</p>
-            <textarea name="query" value={contactForm.query} onChange={handleChange} type="text" class="footer-form-field textarea"  placeholder="Write your question." />
-            <button type="submit" class="footer-form-btn">Submit</button>
+            <textarea name="query" value={contactForm.query} onChange={handleChange} type="text" className="footer-form-field textarea"  placeholder="Write your question." />
+            <button type="submit" className="footer-form-btn">Submit</button>
           </form>
         </div>
       </div>
