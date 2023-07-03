@@ -33,3 +33,23 @@
     margin-top: 10%;
     margin-right: 10%;
 }
+
+@media screen and (max-width: 768px) {
+    .left_desc-bg_ellipse {
+        display: none;
+    }
+
+    .left_desc-container {
+        flex-direction: column;
+    }
+
+    .left_desc-top_image {
+        margin: 5% 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .left_desc-bg_ellipse {
+        display: none;
+    }
+}
