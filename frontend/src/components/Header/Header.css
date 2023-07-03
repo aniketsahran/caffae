@@ -92,6 +92,8 @@ font-weight: 700;
 display: flex;
 margin:5% 0 7%;
 border: none;
+text-decoration: none;
+
 }
 
 .header-caffae-top{ 
@@ -110,6 +112,10 @@ background: url("../../assets/caffaeraw-041.png"), 50% / cover no-repeat;
     display: flex;
     align-items: left;
     justify-content: left;
+    padding-bottom: 20%;
+}
+.desc_text-container a{
+    text-decoration: none;
     padding: 8% 0 20%;
 }
 

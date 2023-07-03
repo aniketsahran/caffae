@@ -53,12 +53,12 @@ const Footer = () => {
       <div className='footer-social_section'>
         <div className='footer-social_section-header'>Follow Us!</div>
         <div className='footer-social_section-social_handles'>
-          <a href="https://www.linkedin.com/company/caffae/" className='footer-social_section-social_handles-handle'><img src={image2} /></a>
-          <a href="https://www.instagram.com/caffae.in/" className='footer-social_section-social_handles-handle'><img src={image3} /></a>
+          <a href="https://www.linkedin.com/company/caffae/" className='footer-social_section-social_handles-handle' target='_blank'><img src={image2} /></a>
+          <a href="https://www.instagram.com/caffae.in/" className='footer-social_section-social_handles-handle' target='_blank'><img src={image3} /></a>
         </div>
         <div className='footer-social_section-mail'>
           <p><b>Contact Us</b><br />
-          <a href="mailto:caffaecare@gmail.com">caffaecare@gmail.com</a></p>
+          <a href="mailto:caffae.in@gmail.com" >caffae.in@gmail.com</a></p>
         </div>
       </div>
     </div>
