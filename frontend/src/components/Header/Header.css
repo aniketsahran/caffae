@@ -112,9 +112,10 @@ background: url("../../assets/caffaeraw-041.png"), 50% / cover no-repeat;
     display: flex;
     align-items: left;
     justify-content: left;
-    padding-bottom: 20%;
+    padding: 10% 0 10%;
 }
-.desc_text-container a{
+
+.header-desc_text-container a{
     text-decoration: none;
     padding: 8% 0 20%;
 }
