@@ -43,7 +43,7 @@ const Footer = () => {
             <input name="name" value={contactForm.name} onChange={handleChange} type="text" className="footer-form-field"  placeholder="Your Name" />
             <p>Your E-Mail</p>
             <input name="email" value={contactForm.email} onChange={handleChange} type="email" className="footer-form-field" placeholder="Ex. yourname@example.com" />
-            <p>Write the Problem you want to ask our guru</p>
+            <p>Write the problem you want to ask our guru.</p>
             <textarea name="query" value={contactForm.query} onChange={handleChange} type="text" className="footer-form-field textarea"  placeholder="Write your question." />
             <button type="submit" className="footer-form-btn">Submit</button>
           </form>

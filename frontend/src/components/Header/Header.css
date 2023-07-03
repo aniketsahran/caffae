@@ -50,7 +50,7 @@ margin-bottom: 5%;
 }
 
 .other{
-       background: linear-gradient(to right, #331EFD, #00D7FE);
+    background: linear-gradient(to right, #331EFD, #00D7FE);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -60,7 +60,7 @@ margin-bottom: 5%;
     justify-content: space-between;
     align-items: center;
     padding-left: 10%;
-    background-image: url("D:\caffae\caffae-main\frontend\src\assets\rectangle11.png");
+    background-image: url("../../assets/rectangle11.png");
     background-size: cover;
     min-height: 100%;
     z-index: 5;
@@ -95,18 +95,20 @@ font-weight: 700;
 display: flex;
 margin:5% 0 7%;
 border: none;
-
 }
+
 .caffae-top{ 
 width: 117.787px;
 height: 38.98px;
-background: url(D:\caffae\caffae-main\frontend\src\assets\caffaeraw-031.png), -117.893px -154.649px / 299.82% 679.348% no-repeat;
+background: url("../../assets/caffaeraw-031.png"), -117.893px -154.649px / 299.82% 679.348% no-repeat;
 }
-.logo-top{
+
+.logo-top {
 width: 59.507px;
 height: 53.843px;
-background: url(D:\caffae\caffae-main\frontend\src\assets\caffaeraw-041.png), 50% / cover no-repeat;
+background: url("../../assets/caffaeraw-041.png"), 50% / cover no-repeat;
 }
+
 .header-logo{
     display: flex;
     align-items: left;
