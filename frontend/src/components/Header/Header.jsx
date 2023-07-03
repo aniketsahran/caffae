@@ -20,7 +20,7 @@ const Header = () => {
       <div className='header-desc'>
       Caffae is a transformative platform connecting seekers with experienced Gurus. Gain valuable advice, personalized guidance, and inspiration from those who have triumphed on the same path. Tap into a wealth of firsthand experiences, practical advice, and tailored guidance from our esteemed Gurus.Let Caffae bridge the gap between aspiration and achievement. Join us today!
       </div>
-      <button className='header-button'>Join our community</button>
+     <a href="#container"><button className='header-button'>Join our community</button></a> 
     </div>
     </div>
     <div className='left_desc-space'></div>
